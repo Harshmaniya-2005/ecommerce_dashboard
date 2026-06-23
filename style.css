@@ -1,0 +1,143 @@
+/* =========================
+   Global
+========================= */
+
+body{
+    background:#F4F6F9;
+    font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.container-fluid{
+    padding:20px;
+}
+
+/* =========================
+   Headings
+========================= */
+
+h1{
+    color:#1F4E79;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#1F4E79;
+}
+
+/* =========================
+   KPI Cards
+========================= */
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#2563EB;
+    font-size:30px;
+    margin:0;
+    font-weight:700;
+}
+
+.card p{
+    margin-top:10px;
+    color:#6B7280;
+    font-size:16px;
+}
+
+/* =========================
+   Plotly Charts
+========================= */
+
+.js-plotly-plot{
+    background:white;
+    border-radius:15px;
+    padding:10px;
+    margin-top:15px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   Insight Box
+========================= */
+
+.insight-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.insight-box h2{
+    margin-bottom:15px;
+}
+
+.insight-box li{
+    margin-bottom:10px;
+    color:#374151;
+}
+
+/* =========================
+   Sidebar
+========================= */
+
+.nav-pills .nav-link{
+    color:white;
+    margin-bottom:8px;
+    border-radius:10px;
+    padding:12px;
+    font-weight:500;
+}
+
+.nav-pills .nav-link:hover{
+    background:#374151;
+}
+
+.nav-pills .nav-link.active{
+    background:#2563EB !important;
+    color:white !important;
+}
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#94A3B8;
+    border-radius:10px;
+}
+/* =========================
+   FIX: Prevent auto-growing charts
+========================= */
+
+.js-plotly-plot {
+    height: 420px !important;
+    max-height: 420px !important;
+    overflow: hidden;
+}
+
+.dash-graph {
+    height: 420px !important;
+}
